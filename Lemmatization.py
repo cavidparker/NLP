@@ -42,5 +42,6 @@ for i in range(len(sentences)):
     words = [lemmatizer.lemmatize(word) for word in words if word not in set(stopwords.words('english'))]
     sentences[i] = ' '.join(words)
 
+
 print("*********** Lemetization only **************** ")
 print(sentences)    
